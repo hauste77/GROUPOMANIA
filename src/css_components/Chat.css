@@ -1,0 +1,21 @@
+.Chat {
+    flex: .65;
+}
+
+.chat__header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+}
+
+.chat__info {
+    flex: 1;
+    margin-left: 14px;
+}
+
+.chat__headerRight {
+    display: flex;
+    align-items: flex-end;
+}
