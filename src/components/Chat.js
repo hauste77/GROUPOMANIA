@@ -1,11 +1,12 @@
 import { Avatar, IconButton } from '@material-ui/core';
-import { SearchOutlined } from '@material-ui/icons';
+import { InsertEmoticon, SearchOutlined } from '@material-ui/icons';
 import AttachFileIcon from '@material-ui/icons/AttachFile';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import React, { seed } from 'react';
 import '../css_components/Chat.css';
 
 function Chat() {
+    
     return (
         <div className="Chat">
             <div className="chat__header">
@@ -29,11 +30,22 @@ function Chat() {
             </div>
 
             <div className="chat__body">
-
+                
+                <p className="chat__message chat__reciever">
+                <span className="chat__name">xavier</span> 
+                hello world !!
+                </p>
+                
             </div>
 
-            <div className="chat_footer">
-
+            <div className="chat__footer">
+                <IconButton>
+                    <InsertEmoticon /> 
+                </IconButton>
+                <form>
+                    <input placeholder="Ecrire votre message ici" type="text" />
+                    <button>Envoyer</button>
+                </form>
             </div>
         </div>
     )
